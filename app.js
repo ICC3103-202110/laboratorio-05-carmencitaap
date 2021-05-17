@@ -14,14 +14,13 @@ model = {
 }
 
 async function app(updateModel, title, table) {
-    console.clear()
+    while (true) {
     console.log(title())
     printTable(table(model))
-    while(true) { 
-        const {input,input1} = await inputMoney(model)
-        const newModel = updateModel(input,input1,model)
-        printTable(table(newModel))
-        //console.log(newModel)
+    const {input,input1} = await inputMoney(model)
+    const newModel = updateModel(input,input1,model)
+    console.log(title())
+    printTable(table(newModel))
     }
 }
 
