@@ -15,7 +15,6 @@ function updateModel(input,input1,model){
         input1: input1
     }
 }
-//console.log(tipCalculator(500,20))
 module.exports = {
     updateModel
 }
