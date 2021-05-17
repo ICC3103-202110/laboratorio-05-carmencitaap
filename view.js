@@ -26,7 +26,7 @@ function table(model) {
 
 function inputMoney(model) {
     const{input} = model
-    const{input1}
+    const{input1} = model
     const message1 = 'Bill Amount?: '
     const message2 = 'Tip? (%)'
     return inquirer.prompt([
